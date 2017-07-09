@@ -1,0 +1,10 @@
+﻿.pager{
+	margin-top:10px;
+    float:right;	
+}
+.pager a{
+    border:solid 1px #AAA;
+    padding:2px 3px;
+    margin:2px;	
+    text-decoration:none;
+}

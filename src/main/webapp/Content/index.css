@@ -1,0 +1,148 @@
+﻿body{
+    background:url(images/index_headerBg.png) repeat-x;	
+}
+#wrapper{
+    width:950px;
+    min-height:400px;	
+    margin:0 auto;
+}
+#sideBar{
+    float:right;
+    width:260px;
+}
+/*登录面板*/
+#sideBar-login{
+    height:128px;	
+    background:url(images/index_loginBg.png);
+    padding:16px 20px;
+}
+#sideBar-login fieldset{
+    border:none;	
+}
+#sideBar-login div{
+    margin-top:15px;	
+}
+#sideBar-login label.title{
+    display:block;
+    width:60px;
+    font:bold 15px "微软雅黑";	
+    line-height:1.8;
+    float:left;
+}
+#sideBar-login label.login-error{
+	color:Red;	
+	line-height:2;
+	padding-left:20px;
+}
+#sideBar-login input.txt{
+    font:15px "微软雅黑";
+    width:140px;	
+    vertical-align:middle;
+}
+#btnLogin,#btnRegister{
+    width:69px;
+    height:25px;
+    display:block;
+    float:left;
+    margin-left:30px;	
+}
+#btnLogin{
+    background:url(images/btn_login.gif);
+    border:none;
+}
+#btnRegister{
+    background:url(images/btn_register.gif);
+}
+/*登录成功*/
+#function-panel ul{
+	margin:10px 10px 10px 10px;	
+}
+#function-panel li a{
+    text-decoration:none;
+    line-height:2;
+    font-size:13px;
+    font-weight:bold;
+}
+.sideBar-block{
+    background:url(images/index_sidebarBg.png) 0 bottom;
+    margin-top:10px;
+}
+.sideBar-block-title{
+    background:url(images/index_sidebarBg.png) 260px 0;
+    height:10px;	
+    padding:10px 0px 0px 20px;
+}
+.sideBar-block-body{
+    min-height:200px;	
+    padding:20px;
+}
+#main{
+    float:left;
+    width:670px;	
+}
+#header{
+    height:94px;
+}
+#header-logo{
+    padding-top:16px;
+}
+#footer{
+    margin-top:20px;
+    text-align:center;
+    padding:20px 0;	
+}
+.clearBoth{
+    clear:both;	
+}
+/*热门博文列表*/
+#hotArticles{
+    margin-top:10px;
+    background:url(images/index_mainBg.png) no-repeat scroll 0 0 transparent;
+    border-left:solid 1px #F4F3F3;
+    border-right:solid 1px #F4F3F3;
+    border-bottom:solid 1px #F4F3F3;
+    padding:0 20px 10px 10px;
+}
+#hotArticles h3{
+    height:20px;
+    line-height:30px;
+    font-size:16px;
+    font-weight:bold;
+    padding:10px 10px 10px 10px;
+}
+.article{
+    margin-top:10px;
+}
+.article,.article-title,.article-body,.article-footer{
+    line-height:1.8;
+}
+.article-title a{
+    text-decoration:none;
+    font-size:16px;
+    font-weight:bold;
+}
+.article-body{
+    font-size:13px;
+}
+.article-link{
+    text-align:right;	
+}
+.article-link a{text-decoration:none;}
+.article-author img{
+    width: 100px;
+}
+.article-author{
+    padding:10px;
+}
+.linedot{
+    height:1px;
+    background:url(images/linedot.gif);
+    margin:10px 0;
+    clear:both;
+}
+/* 最新博文列表, 热门博主 */
+#newArticles ul li a,#hotAuthors ul li a{
+    text-decoration:none;
+    line-height:1.8;
+    font-size:13px;
+}

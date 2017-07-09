@@ -1,0 +1,151 @@
+﻿body {
+    background-color: #9CAEC1;
+}
+#page {
+    margin: 0 auto;
+    background: url(images/footer.jpg) no-repeat center bottom;
+}
+#blog {
+    margin: 0 auto;
+    background: url(images/header.jpg) no-repeat center top;
+}
+#blogHead {
+    height: 116px;
+    width: 950px;
+    margin:0 auto;
+    padding-top: 140px;
+}
+#blogFoot {
+    height: 190px;
+    width:950px;
+    clear:both;
+}
+#blogBody{
+    width:954px;
+    margin:0 auto;    
+    clear:both;
+}
+#sideCol{
+    width:210px;
+    float:left;    
+}
+#mainCol{
+    width:730px;
+    margin-left:10px;
+    float:left;
+}
+.sideCol-head{
+    background-image:url(images/modelhead.png);
+    background-position:210px 0;
+    height:26px;
+}
+.sideCol-body{
+    background-image:url(images/modelbody.png);    
+    background-position:210px 0;
+}
+.sideCol-body,.mainCol-body{
+    padding:20px;	
+            
+}
+.mainCol-head{
+    background-image:url(images/modelhead.png);
+    background-position:1450px 0;    
+    height:26px;
+}
+.mainCol-body{
+    background-image:url(images/modelbody.png);
+    background-position:1450px 0;    
+}
+#sideCol .module{
+    clear:both;
+    height:100%;
+    margin:0 0 10px;
+    overflow:hidden;
+    text-align:left;
+    width:auto;    
+}
+.sideCol-head .title{
+    color:#333333;
+    float:left;
+    font-weight:700;
+    padding-left:10px;
+    padding-top:8px;    
+}
+.mainCol-head .title{
+    color:#333333;
+    float:left;
+    font-weight:700;
+    padding-left:10px;
+    padding-top:8px;    
+}
+.clearBoth{
+    clear:both;	
+}
+
+/*头部导航*/
+#blogHead-info{
+    width:800px;
+    margin:0 auto;
+}
+#blogHead-info,#blogHead-info a{
+    color:#F5F1EA;	
+}
+#blogHead-info-signName{
+    font-family:"幼圆";
+}
+#blogHeader-info-link{
+    line-height:2;
+    text-decoration:none;
+}
+#blogHead-info-nav{
+    margin-top:20px;	
+}
+#blogHead-info-nav li{
+    float:left;
+    margin-left:20px;
+}
+
+#blogHead-info-nav li a{
+    font-size:16px;
+    text-decoration:none;
+    color:#F5F1EA;
+}
+
+/*侧栏－个人信息和导航*/
+#userHead{
+    width:160px;
+    height:160px;
+    margin: 5px;
+}
+#nickName{
+    margin:10px;
+    text-align:center;
+    color:Gray;
+}
+.linedot{
+    height:1px;
+    background:url(images/linedot.gif);
+    margin:10px 0;
+    clear:both;
+}
+.linkButton{
+    background:url(images/buttonBg.png);
+    height:23px;
+    width:69px;
+    display:block;
+    float:left;
+    line-height:2;
+    text-align:center;
+    cursor:pointer;
+    margin: 5px 0px 5px 10px;
+}
+.sideCol-body ul{
+    list-style-type:none;
+    line-height:2;
+}
+#integration{
+    margin:0px 0 0px 10px;
+}
+#postCategories a,#hotArticles a,#ablums a,#integration a{
+    text-decoration:none;	
+}

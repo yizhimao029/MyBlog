@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+    "http://struts.apache.org/dtds/struts-2.3.dtd">
+<struts>
+	<package name="def" namespace="/" extends="json-default">
+		<action name="IndexAction" class="IndexAction">
+			<result>/index.jsp</result>
+		</action>
+		<action name="LoginAction" class="UserAction" method="checkUser">
+			<result name="success" type="redirect">/IndexAction</result>
+			<result name="login" type="chain">
+				<param name="actionName">IndexAction</param>
+			</result>	
+		</action>
+		<action name="LogoutAction" class="UserAction" method="logoutUser">
+			<result name="success" type="redirect">/IndexAction</result>
+		</action>
+		<action name="MyBlogAction" class="BlogAction">
+			<result>/blogPage.jsp</result>
+		</action>
+		<action name="DetailsAction" class="BlogAction" method="details">
+			<result>/blogPageDetails.jsp</result>
+		</action>
+		<action name="AddComment" class="BlogAction" method="addComment">
+			<result type="redirect">/DetailsAction?id=${article.id}&amp;userId=${article.user.id}</result>
+		</action>
+		<action name="PhotoListAction" class="PhotoAction">
+			<result>/photo.jsp</result>
+		</action>
+		<action name="PhotoDetailsAction" class="PhotoAction" method="photoDetails">
+			<result>/photo_details.jsp</result>
+		</action>
+		<action name="PhotoShowAction" class="PhotoAction" method="photoShow">
+			<result>/photo_show.jsp</result>
+		</action>
+		<action name="sidebar" class="SidebarAction" method="showList"> 			
+			<result>/shared/SideBar.jsp</result>
+		</action>
+		<action name="head" class="SidebarAction" method="head"> 			
+			<result>/shared/head.jsp</result>
+		</action>		
+	</package>
+	<package name="admin" namespace="/" extends="json-default">
+<!-- 		<action name="MessagePageAction" class="MessageAction">
+			<result>/admin/message_page.jsp</result>
+		</action> -->
+		<action name="MessageSearchAction" class="MessageAction" method="search">
+			<result>/admin/message_page.jsp</result>
+		</action>
+		<action name="DelMessage" class="MessageAction" method="del">
+			<result type="redirect">/MessageSearchAction</result>
+		</action>
+<!-- 		<action name="SearchAction" class="MessageAction" method="search">
+			<result type="json"></result>
+		</action>
+		<action name="DelMessage" class="MessageAction" method="del">
+			<result type="json"></result>
+		</action> -->
+		<action name="PutMessageAction" class="MessageAction" method="put">
+			<result>/admin/message_edit.jsp</result>
+		</action>
+		<action name="SaveMessageAction" class="MessageAction" method="save">
+			<result type="redirect">/MessageSearchAction</result>
+		</action>
+		<action name="PhotoList" class="PhotoListAction">
+			<result>/admin/photo_list.jsp</result>
+		</action>
+		<action name="AlbumSave" class="PhotoListAction" method="save">
+			<result type="redirect">/PhotoList</result>
+		</action>
+		<action name="PhotoPage" class="PhotoListAction" method="show">
+			<result>/admin/photo_page.jsp</result>
+		</action>
+		<action name="PhotoSave" class="PhotoListAction" method="photoSave">
+			<result type="redirect">/PhotoPage?albumId=${photo.album.id}</result>
+		</action>
+	</package>
+	
+		
+</struts>
